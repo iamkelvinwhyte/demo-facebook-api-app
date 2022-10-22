@@ -114,7 +114,7 @@ class FaceBookApp(APIView):
 @method_decorator(cache_page(60 * 5), name='dispatch') 
 class GetFaceBookApp(APIView):
     """
-    Custom token class for generating authentication token for mobile api  
+    This module GET data from  facebook page . 
     """
     permission_classes = [IsAuthenticated]
     @swagger_auto_schema(request_body=openapi.Schema(
